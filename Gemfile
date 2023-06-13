@@ -67,6 +67,7 @@ group :development do
   gem 'byebug'
   gem 'pry', '~> 0.13.1'
   gem 'pry-nav'
+  gem 'faker'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
