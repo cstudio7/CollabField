@@ -42,8 +42,16 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem "cssbundling-rails"
+
+gem 'jquery-rails'
+
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem 'bootstrap-sass', '~> 3.4.1'
+gem "sassc-rails"
+
+gem 'devise'
+gem 'bootstrap_form'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -56,6 +64,10 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem 'byebug'
+  gem 'pry', '~> 0.13.1'
+  gem 'pry-nav'
+  gem 'faker'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -69,4 +81,11 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_girl_rails'
+  gem 'rails-controller-testing'
+  gem 'headless'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
